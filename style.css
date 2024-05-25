@@ -1,0 +1,499 @@
+/* CSS variables */
+
+h1 {
+  font-size: 2.5em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav ul li {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ff6347;
+  transition: 0.3s ease-in-out;
+}
+header .cart_div {
+  padding: 8px 16px;
+  background-color: #333;
+  border: 1.2px solid white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2rem;
+}
+
+header .cart_div:hover {
+  background-color: white;
+  transition: ease-in-out 0.2s;
+}
+
+header .cart_div:hover a {
+  color: #333;
+}
+header .cart_div span {
+  background-color: #808080;
+  border-radius: 50%;
+  padding: 0.25em 0.5em;
+  margin-left: 0.5em;
+  font-size: 0.8em;
+}
+
+header .cart_div a {
+  text-decoration: none;
+  color: white;
+
+  font-size: 16px;
+}
+
+header .cart_div span {
+  margin-left: 10px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  gap: 4rem;
+  margin-left: 2rem;
+}
+
+.product {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-details button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1.2px solid #333;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.product-details a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.product-details button:hover {
+  background-color: #333;
+  transition: ease-in-out 0.2s;
+}
+
+.product-details button:hover a {
+  color: white;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product-detail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: fit-content;
+}
+
+.product-general {
+  margin-right: 2rem;
+}
+
+.product-general img {
+  width: 250px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.product-general p {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.product-detail form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.product-detail label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.product-detail input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.product-detail button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1.2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.product-detail button:hover {
+  background-color: #333;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.cart-checkout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 2rem;
+}
+.checkout {
+  margin-right: 4rem;
+}
+.cart {
+  width: 70%;
+}
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart table,
+.cart th,
+.cart td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.cart th {
+  background-color: #f2f2f2;
+}
+
+.cart td img {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.cart .quantity-change {
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cart button {
+  cursor: pointer;
+  padding: 6px 14px;
+  background-color: white;
+  border: 1.2px solid #333;
+  border-radius: 8px;
+}
+
+.add-products {
+  color: #333;
+  margin-left: 2rem;
+}
+
+.checkout {
+  margin-right: 3rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 25%;
+  background-color: #f9f9f9;
+}
+
+.checkout h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.checkout form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-left: 1rem;
+}
+
+.checkout label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.checkout input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(100% - 1rem);
+}
+
+.checkout button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1.2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.checkout button:hover {
+  background-color: #333;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.add-product-form {
+  margin-right: 3rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 25%;
+  background-color: #f9f9f9;
+}
+
+.add-product-form h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.add-product-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-left: 1rem;
+}
+
+.add-product-form label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.add-product-form input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(100% - 1rem);
+}
+
+.add-product-form button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1.2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.add-product-form button:hover {
+  background-color: #333;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+.back {
+  color: #333;
+  margin-left: 2rem;
+}
+
+.edit-product-form {
+  margin-right: 3rem;
+  margin-left: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 25%;
+  background-color: #f9f9f9;
+}
+
+.edit-product-form h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.edit-product-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  margin-left: 1rem;
+}
+
+.edit-product-form label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.edit-product-form input {
+  padding: 0.4rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(100% - 1rem);
+}
+
+.edit-product-form button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 1.2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.edit-product-form button:hover {
+  background-color: #333;
+  color: white;
+  transition: ease-in-out 0.2s;
+}
+
+.content {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+
+.content a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background-color: white;
+  border: 1.2px solid #333;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.content a:hover {
+  background-color: #333;
+  color: white;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.content th,
+.content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.content th {
+  background-color: #f2f2f2;
+}
+
+.content td img {
+  width: 50px;
+  height: auto;
+  display: block;
+}
+
+.content .actions a {
+  margin-right: 8px;
+}
+
+.content .actions a:hover {
+  text-decoration: none;
+}
+
+.content .back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 16px;
+  background-color: white;
+  border: 1.2px solid #333;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.content .back-link:hover {
+  background-color: #333;
+  color: white;
+}
